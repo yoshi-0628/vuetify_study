@@ -33,13 +33,23 @@
         <v-icon>mdi-dots-vertical</v-icon>
       </v-btn>
 
+      <template v-slot:extension>
+        <v-tabs 
+          align-with-title
+          fixed-tabs
+        >
+          <v-tab>Overview</v-tab>
+          <v-tab>Schedule</v-tab>
+          <v-tab>Edit</v-tab>
+        </v-tabs>
+      </template>
+    
     </v-app-bar>
     <v-sheet
       id="scrolling-techniques-7"
       class="overflow-y-auto"
     >
       <v-main>
-        <HelloWorld/>
         <HelloWorld/>
       </v-main>
     </v-sheet>
